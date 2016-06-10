@@ -5,3 +5,9 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
+
+ward = User.create(name: "Ward", avatar: "http://www.bang2write.com/wp-content/uploads/2013/12/The-Ward-Poster.jpg")
+
+Message.create(content: "OMG Hello World", user: ward)
+Message.create(content: "OMG Hello Mars", user: ward)
+Message.create(content: "OMG Hello Pluto", user: ward)
