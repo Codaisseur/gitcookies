@@ -1,0 +1,14 @@
+<h1>Cookie?</h1>
+
+<p>Last time your favorite cookie was: <%= session[:favorite_cookie] %></p>
+
+<form action="/set-cookie" method="POST">
+  <div>
+    <input type="text" name="favorite_cookie" placeholder="What's your favorite cookie?" style="width: 100%">
+    <br>
+    <small>I'll try to remember!</small>
+  </div>
+  <div>
+    <input type="submit" value="Remember!">
+  </div>
+<form>
